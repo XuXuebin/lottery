@@ -203,7 +203,7 @@
                 .map(function(m){
                   choosed[getKey(m)] = 1;
                   list[m.index].style.color = color;
-                  return m.name + '<br/>' + m.phone; 
+                  return m.name + '<br/>' + m.phone;
                 });
             localStorage.setItem('choosed', JSON.stringify(choosed));
             return ret;
@@ -219,7 +219,7 @@
                 selected: 30,
                 running: false,
                 btns: [
-                    30, 10, 5, 2, 1
+                    80, 9, 6, 3
                 ]
             },
             mounted () {
