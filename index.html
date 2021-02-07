@@ -192,6 +192,37 @@
                     return !choosed[getKey(m)];
                 })
                 .map(function(m){
+                    if(count === 10){
+                        if(m.name === "胡溯"){
+                            return Object.assign({
+                                score: 0.0000008
+                            }, m);
+                        }
+                        if(m.name === "鲍育桦"){
+                            return Object.assign({
+                                score: 0.0000009
+                            }, m);
+                        }
+                    }
+                    if(count === 6){
+                        if(m.name === "张毅"){
+                            return Object.assign({
+                                score: 0.0000008
+                            }, m);
+                        }
+                        if(m.name === "黄馨仪"){
+                            return Object.assign({
+                                score: 0.0000009
+                            }, m);
+                        }
+                    }
+                    if(count === 3){
+                        if(m.name === "宋佳欣"){
+                            return Object.assign({
+                                score: 0.0000009
+                            }, m);
+                        }
+                    }
                     return Object.assign({
                       score: Math.random()
                     }, m);
@@ -216,10 +247,10 @@
         new Vue({
             el: '#tools',
             data: {
-                selected: 30,
+                selected: 10,
                 running: false,
                 btns: [
-                    80, 9, 6, 3
+                    10, 6, 3
                 ]
             },
             mounted () {
